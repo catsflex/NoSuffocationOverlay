@@ -4,7 +4,7 @@
 ![Loader](https://img.shields.io/badge/Loader-Fabric-brightgreen)
 ![License](https://img.shields.io/badge/License-GPL--3.0-red)
 
-**NoSuffocationOverlay** is a lightweight client-side mod for **Fabric 1.21+** that allows you to either remove or
+**NoSuffocationOverlay** is a lightweight client-side mod for **Fabric 1.21.6+** that allows you to either remove or
 change the opacity of the block overlay when your head is inside a block.
 
 ## Configuration
