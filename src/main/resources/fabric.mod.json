@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "nosuffocationoverlay",
+  "version": "${version}",
+  "name": "NoSuffocationOverlay",
+  "description": "Removes the block overlay when your head is inside a block",
+  "authors": [
+    "CatsFlex"
+  ],
+  "contact": {
+    "homepage": "https://github.com/CatsFlex/NoSuffocationOverlay",
+    "sources": "https://github.com/CatsFlex/NoSuffocationOverlay",
+    "issues": "https://github.com/CatsFlex/NoSuffocationOverlay/issues"
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/nosuffocationoverlay/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "modmenu": [
+      "me.catsflex.nosuffocationoverlay.config.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "nosuffocationoverlay.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": ">=${minecraft_version}"
+  }
+}

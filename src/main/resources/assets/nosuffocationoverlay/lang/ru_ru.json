@@ -1,0 +1,8 @@
+{
+  "config.nosuffocationoverlay.title": "Настройки NoSuffocationOverlay",
+  "config.nosuffocationoverlay.section.general": "Основные настройки",
+  "config.nosuffocationoverlay.option.enabled.name": "Включён",
+  "config.nosuffocationoverlay.option.enabled.desc": "Включает или выключает работу мода",
+  "config.nosuffocationoverlay.option.opacity.name": "Непрозрачность оверлея",
+  "config.nosuffocationoverlay.option.opacity.desc": "Устанавливает видимость оверлея блока"
+}
