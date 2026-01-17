@@ -3,6 +3,6 @@
   "config.nosuffocationoverlay.section.general": "General Settings",
   "config.nosuffocationoverlay.option.enabled.name": "Enabled",
   "config.nosuffocationoverlay.option.enabled.desc": "Toggles the mod",
-  "config.nosuffocationoverlay.option.opacity.name": "Overlay Opacity",
+  "config.nosuffocationoverlay.option.opacity.name": "Overlay Opacity (in %)",
   "config.nosuffocationoverlay.option.opacity.desc": "Sets the block overlay opacity"
 }
