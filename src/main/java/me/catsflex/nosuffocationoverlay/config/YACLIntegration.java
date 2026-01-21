@@ -16,6 +16,7 @@ public class YACLIntegration {
 		return YetAnotherConfigLib.createBuilder()
 			.title(Component.translatable("config.nosuffocationoverlay.title"))
 			.category(ConfigCategory.createBuilder()
+				
 				.name(Component.translatable("config.nosuffocationoverlay.section.general"))
 				
 				// 'Enabled' option
@@ -26,12 +27,20 @@ public class YACLIntegration {
 					.controller(TickBoxControllerBuilder::create)
 					.build())
 				
-				// 'Opacity' option
+				// 'Overlay Opacity' option
 				.option(Option.<Integer>createBuilder()
 					.name(Component.translatable("config.nosuffocationoverlay.option.opacity.name"))
 					.description(OptionDescription.of(Component.translatable("config.nosuffocationoverlay.option.opacity.desc")))
 					.binding(NoSuffocationOverlayConfig.DEF_OPACITY_PERCENT, () -> config.opacityPercent, v -> config.opacityPercent = v)
-					.controller(opt -> IntegerSliderControllerBuilder.create(opt).range(NoSuffocationOverlayConfig.OPACITY_PERCENT_MIN, NoSuffocationOverlayConfig.OPACITY_PERCENT_MAX).step(1))
+					.controller(opt -> IntegerSliderControllerBuilder.create(opt).range(NoSuffocationOverlayConfig.LIM_PERCENT_MIN, NoSuffocationOverlayConfig.LIM_PERCENT_MAX).step(1))
+					.build())
+				
+				// 'Overlay Brightness' option
+				.option(Option.<Integer>createBuilder()
+					.name(Component.translatable("config.nosuffocationoverlay.option.brightness.name"))
+					.description(OptionDescription.of(Component.translatable("config.nosuffocationoverlay.option.brightness.desc")))
+					.binding(NoSuffocationOverlayConfig.DEF_BRIGHTNESS_PERCENT, () -> config.brightnessPercent, v -> config.brightnessPercent = v)
+					.controller(opt -> IntegerSliderControllerBuilder.create(opt).range(NoSuffocationOverlayConfig.LIM_PERCENT_MIN, NoSuffocationOverlayConfig.LIM_PERCENT_MAX).step(1))
 					.build())
 				
 				.build())

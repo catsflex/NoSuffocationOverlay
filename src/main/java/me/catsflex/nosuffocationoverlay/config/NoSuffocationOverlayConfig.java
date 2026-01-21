@@ -13,14 +13,16 @@ public class NoSuffocationOverlayConfig {
 	// Default values
 	public static final boolean DEF_ENABLED = true;
 	public static final int DEF_OPACITY_PERCENT = 50;
+	public static final int DEF_BRIGHTNESS_PERCENT = 10;
 	
 	// Limits
-	public static final int OPACITY_PERCENT_MIN = 0;
-	public static final int OPACITY_PERCENT_MAX = 100;
+	public static final int LIM_PERCENT_MIN = 0;
+	public static final int LIM_PERCENT_MAX = 100;
 	
 	// Current values
 	public boolean enabled = DEF_ENABLED;
 	public int opacityPercent = DEF_OPACITY_PERCENT;
+	public int brightnessPercent = DEF_BRIGHTNESS_PERCENT;
 	
 	// Config saving stuff
 	private static final Gson _GSON = new GsonBuilder().setPrettyPrinting().create();
@@ -40,7 +42,8 @@ public class NoSuffocationOverlayConfig {
 		if (_FILE.exists()) {
 			try (var reader = new FileReader(_FILE)) {
 				var loaded = _GSON.fromJson(reader, NoSuffocationOverlayConfig.class);
-				loaded.opacityPercent = Math.clamp(loaded.opacityPercent, OPACITY_PERCENT_MIN, OPACITY_PERCENT_MAX);
+				loaded.opacityPercent = Math.clamp(loaded.opacityPercent, LIM_PERCENT_MIN, LIM_PERCENT_MAX);
+				loaded.brightnessPercent = Math.clamp(loaded.brightnessPercent, LIM_PERCENT_MIN, LIM_PERCENT_MAX);
 				return loaded;
 			} catch (Exception e) {
 				e.printStackTrace();

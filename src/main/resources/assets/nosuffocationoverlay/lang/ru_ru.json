@@ -4,5 +4,7 @@
   "config.nosuffocationoverlay.option.enabled.name": "Включён",
   "config.nosuffocationoverlay.option.enabled.desc": "Включает или выключает работу мода",
   "config.nosuffocationoverlay.option.opacity.name": "Непрозрачность оверлея (в %)",
-  "config.nosuffocationoverlay.option.opacity.desc": "Устанавливает видимость оверлея блока"
+  "config.nosuffocationoverlay.option.opacity.desc": "Устанавливает видимость оверлея блока",
+  "config.nosuffocationoverlay.option.brightness.name": "Яркость оверлея (в %)",
+  "config.nosuffocationoverlay.option.brightness.desc": "Устанавливает яркость оверлея блока"
 }

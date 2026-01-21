@@ -1,6 +1,6 @@
 # NoSuffocationOverlay
 
-![Minecraft Version](https://img.shields.io/badge/Minecraft-1.21.x-blue)
+![Minecraft Version](https://img.shields.io/badge/Minecraft-1.21.6%2B-blue)
 ![Loader](https://img.shields.io/badge/Loader-Fabric-brightgreen)
 ![License](https://img.shields.io/badge/License-GPL--3.0-red)
 
@@ -11,4 +11,5 @@
 You can change mod settings using [**Mod Menu**](https://modrinth.com/mod/modmenu) & [**YetAnotherConfigLib (YACL)**](https://modrinth.com/mod/yacl) directly in game.
 
 - **Enabled** - a switch that toggles the mod.
-- **Overlay Opacity** - a percentage slider that sets the visibility level of the block overlay.
+- **Overlay Opacity** - a percentage slider that sets the visibility level of the block overlay. _Vanilla: 50%_
+- **Overlay Brightness** - a percentage slider that sets the brightness of the block overlay. _Vanilla: 10%_

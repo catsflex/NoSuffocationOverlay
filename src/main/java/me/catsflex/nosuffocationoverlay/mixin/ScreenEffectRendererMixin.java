@@ -16,10 +16,12 @@ public class ScreenEffectRendererMixin {
 	)
 	private static int changeOverlayAlpha(float a, float r, float g, float b) {
 		var config = NoSuffocationOverlayConfig.getInstance();
-		
 		if (!config.enabled) return ARGB.colorFromFloat(a, r, g, b);
 		
 		float customAlpha = config.opacityPercent / 100.0f;
-		return ARGB.colorFromFloat(customAlpha, r, g, b);
+		float customBrightness = config.brightnessPercent / 100.0f;
+		
+		// Changing brightness == changing RGB simultaneously at the same rate
+		return ARGB.colorFromFloat(customAlpha, customBrightness, customBrightness, customBrightness);
 	}
 }

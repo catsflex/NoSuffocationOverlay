@@ -4,5 +4,7 @@
   "config.nosuffocationoverlay.option.enabled.name": "Enabled",
   "config.nosuffocationoverlay.option.enabled.desc": "Toggles the mod",
   "config.nosuffocationoverlay.option.opacity.name": "Overlay Opacity (in %)",
-  "config.nosuffocationoverlay.option.opacity.desc": "Sets the block overlay opacity"
+  "config.nosuffocationoverlay.option.opacity.desc": "Sets the block overlay opacity",
+  "config.nosuffocationoverlay.option.brightness.name": "Overlay Brightness (in %)",
+  "config.nosuffocationoverlay.option.brightness.desc": "Sets the block overlay brightness"
 }
